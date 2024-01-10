@@ -84,7 +84,10 @@
     Subject : "Request for delete account",
     Body : document.getElementById("message").value
 }).then(
-  message => alert(message)
+  message => {
+            alert("Request is sent successfully");
+            console.log(message);
+        }
 );
   }
   </script>
